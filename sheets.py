@@ -70,5 +70,10 @@ for i, row in enumerate(data[3:], start=4):
         # update situation
         worksheet.update_cell(i, 7, situacao)
 
+# update automatic (3 seconds)
+while True:
+    update_spreadsheet()
+    time.sleep(3)
+
 
 # powered Alexander Silva de Andrade
